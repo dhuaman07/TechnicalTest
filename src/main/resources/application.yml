@@ -1,0 +1,16 @@
+spring:
+  r2dbc:
+    url: r2dbc:mssql://arkod.site:1433/TestDB?trustServerCertificate=true
+    username: sa
+    password: Tawa832*
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com.dhuaman: DEBUG
+    io.r2dbc: INFO
